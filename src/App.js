@@ -1,6 +1,6 @@
 import './App.css';
 import AppBar from './Components/NavBar';
-import { Grid, Box } from "@mui/material"
+import { Grid } from "@mui/material"
 import MainComponent from './Components/MainComponent';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {

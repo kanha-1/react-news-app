@@ -19,10 +19,10 @@ function NewsComponent(props) {
                                     </Grid>
                                     <Grid item xs={6} ml={2}>
                                         <Box fontSize="22px" fontWeight="bold">{data.title}</Box>
-                                        <Box> <div dangerouslySetInnerHTML={{ __html: data.description }}></div></Box>
-                                        <Box> <div dangerouslySetInnerHTML={{ __html: data.content }}></div></Box>
+                                        <Box fontSize="13px" mt={1}> <div dangerouslySetInnerHTML={{ __html: data.description }}></div></Box>
+                                        <Box fontSize="12px" mt={1}> <div dangerouslySetInnerHTML={{ __html: data.content }}></div></Box>
                                         {data.author ?
-                                            <Box color="blue">Author - {data.author}</Box>
+                                            <Box mt={1} color="blue">Author - {data.author}</Box>
                                             : null}
                                         <Box>Updated At - {moment(data.publishedAt).format('LLL')}</Box>
                                         <Button variant="contained" style={{ marginTop: "10px" }} onClick={() => window.open(data.url)}>
